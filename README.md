@@ -2,7 +2,7 @@
 Examples of some self made CV algorithms.
 
 ---
-## Cards suits recognition:
+## Proportion-resistant suit recognition:
 
 ![heart.gif](cards%2Fheart.gif) ![diamond.gif](cards%2Fdiamond.gif)
 
@@ -29,6 +29,9 @@ def heart_or_diamond(suit_binary: npt.NDArray[np.uint8]) -> str:
         return "d"
     return "h"
 ```
+
+![club.gif](cards%2Fclub.gif) ![spade.gif](cards%2Fspade.gif)
+
 ```Python
 def club_or_spade(suit_binary: npt.NDArray[np.uint8]) -> str:
     belt_y = np.count_nonzero(suit_binary, axis=1).argmax()
